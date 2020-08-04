@@ -36,8 +36,8 @@ function record(control) {
                 chunks.push(e.data);
 
                 if (recorder.state === 'inactive') {
-                    let blob = new Blob(chunks, { type: 'audio/mp3' });
-                    document.getElementById('audio').innerHTML = '<source src="' + URL.createObjectURL(blob) + '" type="video/mp3" />'; 
+                    let blob = new Blob(chunks, { type: 'audio/webm' });
+                   //document.getElementById('audio').innerHTML = '<source src="' + URL.createObjectURL(blob) + '" type="video/webm" />'; //;
                     var reader = new FileReader();
 
                     reader.addEventListener("load", function () {
